@@ -1,0 +1,92 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Sneakers Story</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="kewords" content="Jordan, AJ, aj, Yeezy, Nike, Adidas" >
+    <meta name="description" content="Jordan/Yeezy and other Sneakers history and story, we provide more information about our love">
+    <meta name="author" content="Jack Wang"> 
+    <style type="text/css">
+        body{
+            margin: 0 ;
+            background-color: black;
+            
+        }
+        #container{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-size:100%;
+            display: block;
+            
+        }
+        #jordan1{
+            position: relative; 
+            width: 50%;
+            float: left;
+            z-index: 0;
+        }
+
+        
+        #yeezy1{
+            position: relative;
+            width: 50%;
+            float: right;
+            z-index: 0;
+        }
+        
+
+        a{
+            display: block;
+            font-size: large;
+            text-align: center;
+            position: sticky;
+            text-decoration: none;
+            margin:0px;
+            padding:0px;
+            top: 0px;
+            z-index: 1;
+        }
+        a:link{color:pink;}
+        a:visited{color:red;}
+        a:hover{color:aqua; 
+                transform: scale(1.5);
+                transition: all 0.6s;
+        }
+        a:active{color:green;}  
+
+        #jordan1:hover img{ 
+            transform: scale(1.01);
+            transition: all 0.6s ease 0s;
+        }
+
+        #yeezy1:hover img{ 
+            transform: scale(1.01);
+            transition: all 0.6s ease 0s;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="jordan1">
+            <a href="Jordanstory.html" target="_blank">进入Jordan故事模式</a>
+            <img src="img\Jordanlogo2.jpg" width="100%" height="fill" alt="Jordanjumpmanlogo" usemap="#jordanlogo">
+            <map name="jordanlogo">
+                <area shape="poly" coords="0,0, 1920,0, 1920,1920, 0,1920" alt="Jordanretro" href="https://nike.com/nz" target="_blank">
+            </map>
+        </div>
+
+        <div id="yeezy1">
+            <a href="AdidasYeezy\yeezystory.html" target="_blank">进入Yeezy故事模式</a>
+            <img src="img\Yeezylogo.png"  width="100%" height="fill" alt="Yeezylogo" usemap="#yeezylogo">
+            <map name="yeezylogo">
+                <area shape="poly" coords="0,0, 1920,0, 1920,1920, 0,1920" alt="yeezyretro" href="https://www.adidas.co.nz/yeezy" target="_blank">
+            </map>
+        </div>
+
+    </div>
+</body>
+</html>
