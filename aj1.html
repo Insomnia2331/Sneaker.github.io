@@ -8,11 +8,6 @@
         <meta name="description" content="Jordan/Yeezy and other Sneakers history and story, we provide more information about our love">
         <meta name="author" content="Jack Wang"> 
         <style type="text/css">
-             @font-face {
-                font-family:"MyCustomFont";
-                src: url("方正新舒体简体FZNSTJW.TTF");
-            }
-            
              body{
                 background-image: url("img/jordanbg.jpeg");
                 background-size: 100%;
@@ -43,13 +38,10 @@
                 transform: scale(1.02);
                 transition: all 0.6s ease 0s;
             }
-            
-          
-    
 
             .container p{
                 margin: 0 20px 0 20px;
-                font-family:"MyCustomFont", serif;
+                font-family:"方正舒体", serif;
                 font-size: 30;     
                 font-weight: 700;   
             }
@@ -86,13 +78,44 @@
             }
 
             
-            
+            .back {
+                position: absolute;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
 
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
         <div class="container">
             <h1>Air Jordan 1</h1>
+            
             <p>每件鞋子都有自己的故事，如今的市场，让年轻的球迷关注更多的是高昂价格带来的档次，却忽略了球鞋本身的文化，爱鞋者都应该了解每双鞋背后的故事，今天就先来讲一下开启Air Jordan的时代“AJ1”。</p><br>
             <p>MichaelJordan的大名，相信全世界的人都听过，“飞人”“篮球之神”NBA最伟大的篮球运动员。80年代初当时Nike因为各大品牌竞争激烈，情况并不乐观。在当时还是小品牌的NIKE需要一个超级巨星来让自己成为世界知名品牌，所以他们决定梭哈这个大三的学生,他就是Michael Jordan。
                 但是当时Michael Jordan并没有看上这个公司，甚至不了解他们有什么产品。Jordan这个绝顶骄傲的人这辈子估计也就给阿迪达斯当过舔狗，一直到和NIKE签约前，Jordan还是没有放弃对阿迪达斯合约的期盼，因为阿迪达斯在那个年代象征了潮流时尚。
@@ -134,5 +157,21 @@
             <img src="aj1\aj1.11.jpg"  alt=" " class="b">
             <img src="aj1\aj1.8.jpg"  alt=" " class="b">
         </div> 
+
+    <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>
+
+
 </html>
