@@ -88,9 +88,41 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
         <div class="container">
             <h1>Air Jordan 3</h1>
             <p>1988年，Air Jordan 3的出现，帮助耐克挽留了即将转投阿迪达斯的“飞人”乔丹。Air Jordan 3代采用了使用于慢跑鞋的AirMAX气垫，使其兼顾了高度的避震性与稳定性，外形上并改以四分之三帮的设计，帮助乔丹发挥了惊人的弹性及速度，成了乔丹的最佳武器。在鞋舌部分，以乔丹飞身上篮动作为蓝本的人形图案设计首次被采用。
@@ -145,5 +177,18 @@
             <img src="aj3\aj3.11.jpg"  alt=" " class="b">
             <img src="aj3\aj3.12.jpg"  alt=" " class="b">
         </div> 
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>   
     </html> 
