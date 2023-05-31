@@ -90,9 +90,42 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgba(235, 243, 4, 0.678);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgba(235, 243, 4, 0.678);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 12</h1>
             <p>这双鞋诞生于1996年11月，那一年，乔丹回归NBA联盟后夺得第四次NBA总冠军，既是一位荣耀加身的传奇球员，同时也成为了毫无疑问的芝加哥公牛队的领袖和NBA精神的代言人。在乔丹继续开创传奇生涯的同一时间，Air Jordan 12 的诞生也在篮球鞋系列里开创着属于自己的传奇篇章。
@@ -140,5 +173,18 @@
             <img src="aj12\aj12.11.jpg"  alt=" " class="b">
             <img src="aj12\aj12.12.jpg"  alt=" " class="b">
         </div> 
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
