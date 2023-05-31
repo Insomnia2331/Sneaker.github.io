@@ -107,9 +107,42 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgb(93, 91, 91);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(93, 91, 91);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 13</h1>
             <p>在延续了 Air Jordan 12 经典撞色的辉煌之后，设计师廷克·哈特菲尔德在与飞人探讨新鞋设计思路的过程中，得知在乔丹小时候，一直被其他孩子取笑为 “Black Cat”，这个外号对年幼的乔丹伤害很深。</p><br>
@@ -160,5 +193,19 @@
             <img src="aj13\aj13.11.jpg"  alt=" " class="b">
             <img src="aj13\aj13.12.jpg"  alt=" " class="b">
         </div> 
+        
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
