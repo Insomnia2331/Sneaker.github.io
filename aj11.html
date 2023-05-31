@@ -107,9 +107,42 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgb(238, 39, 39);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(238, 39, 39);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 11</h1>
             <p>在1993年10月6号的新闻发布会的现场，已经31岁的乔丹对自己退役的原因阐述的十分简单：我已登上了篮球的最巅峰，在这赛场上没有什么能够激起我的热情了。
@@ -161,5 +194,18 @@
             <img src="aj11\aj11.11.jpg"  alt=" " class="b">
             <img src="aj11\aj11.12.jpg"  alt=" " class="b">
         </div> 
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
