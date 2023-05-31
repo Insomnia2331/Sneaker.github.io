@@ -107,9 +107,41 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            .back {
+                position: absolute;
+                background: rgb(93, 91, 91);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(93, 91, 91);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 14</h1>
             <p>乔丹在公牛队的最后一投，不仅成就了第二个三连冠霸业，也让黑红 Air Jordan 14 成为所有鞋迷心中的永恒的经典，并由此得名“The last shot”。
@@ -155,6 +187,19 @@
             <img src="aj14\aj14.10.jpg"  alt=" " class="b">
             <img src="aj14\aj14.11.jpg"  alt=" " class="b">
             <img src="aj14\aj14.12.jpg"  alt=" " class="b">
-        </div> 
+        </div>
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
