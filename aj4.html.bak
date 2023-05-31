@@ -39,9 +39,15 @@
                 transition: all 0.6s ease 0s;
             }
 
+            @font-face {
+                font-family: "MyCustomFont";
+                src: url("方正新舒体简体FZNSTJW.TTF");
+            }
+    
+
             .container p{
                 margin: 0 20px 0 20px;
-                font-family:"方正舒体", serif;
+                font-family:"MyCustomFont", serif;
                 font-size: 30;     
                 font-weight: 700;   
             }
@@ -84,9 +90,42 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgba(230, 102, 102, 0.678);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgba(230, 102, 102, 0.678);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 4</h1>
             <p>Air Jordan 4 背后的故事没有并前三代那样惊心动魄。在NIKE成功留住乔丹后，设计师Tinker Hatfield继续接任了Air Jordan系列的首席设计师。他首次提出了尼龙和皮质相结合的理念在设计上多少有一些乔丹3代的影子。
@@ -95,38 +134,51 @@
             <p>虽然现在看起来并不那么高级，但通过调节鞋带的穿孔位置，也能更好的解决包裹和适应性的问题。而这也成为最让人印象深刻的细节之一。
                 4代仍然使用后掌外露式的气垫，中等容量，这在当时已经是防震效果最好的气垫了。中底配置并未做出多大改变，仍然保持前后分离sole的配置。鞋内部采用了高耐久材料urabuck。
                 网状材质，再加上明显的NIKE-AIR专利气垫，使得四分之三帮的样式更加进化。飞人的标志从鞋后转移到了鞋舌上，以全黑作为运动鞋的主体设计，从此改变篮球鞋的设计概念。</p><br>
-            <img src="aj9\aj9wenzi.jpg"  alt=" "><br><br><br>
+            <img src="aj4\aj4wenzi.jpg"  alt=" "><br><br><br>
 
             <h3>Flight</h3>
             <p>正遇到nike当时提出Flight的理念，所以最终我们不仅在Air Jordan 4的鞋盒上，也在Air Jordan 4的鞋舌上看到了“Flight”的字样，而这也成为Air Jordan 4区别于其他Jordan正代鞋款的重要标志之一。</p><br>
 
             <h3>白水泥</h3>
-            <p>White Cement 白水泥首次发售于1989年2月，作为Air Jordan4四代鞋型的4款OG元年配色之一，在当时的潮流中，并不是所有人都可以接受这样一款造型新潮无比，思想设计前卫的篮球鞋出现在NBA的赛场上的。</p>
+            <p>White Cement 白水泥首次发售于1989年2月，作为Air Jordan 4四代鞋型的4款OG元年配色之一，在当时的潮流中，并不是所有人都可以接受这样一款造型新潮无比，思想设计前卫的篮球鞋出现在NBA的赛场上的。</p>
             <p>伟大的导演斯派克李，不仅与耐克和MJ合作了飞人乔丹3的广告拍摄，还对飞人乔丹4给予了高度评价，也非常喜爱这种经典的鞋型。同样，在第三次回归后不久，MJ拍摄了Air Jordan 4的商业电视广告，
                 白水泥自然作为主旋律出现。</p><br>
 
             <h3>黑红</h3>    
-            <p>“THE SHOT”你还记得吗？或者说你真的知道其中的含义吗？aj9的成名，莫过于在1989年5月7日，NBA季后赛东部第一轮第五场乔丹上演的那经典一投，“THE SHOT”一词也从那时起便诞生。在最后一场生死之战中，双方僵持不下，比赛十分焦灼。距离比赛结束，还剩最后3秒，公牛以99比100落后骑士一分。
+            <p>“THE SHOT”你还记得吗？或者说你真的知道其中的含义吗？aj4的成名，莫过于在1989年5月7日，NBA季后赛东部第一轮第五场乔丹上演的那经典一投，“THE SHOT”一词也从那时起便诞生。在最后一场生死之战中，双方僵持不下，比赛十分焦灼。距离比赛结束，还剩最后3秒，公牛以99比100落后骑士一分。
                 <br>当时全场的焦点都集中在乔丹的身上，乔丹用惊人的技巧 晃过南斯和伊洛的夹击，在右侧三分线迅速拿到球向左突破，随后至罚球线处，急停，正面跳投，超强的滞空能力让他完美的完成了那场让人热血沸腾的经典绝杀。
-                    尽管时间飞逝已过30年，但相信只要是乔丹的球迷或是痴迷于Aj系列的鞋迷们，提起这场比赛，都不禁想起绝杀后高高跳起，在空中激动挥拳嘶吼庆祝的身影及他脚上那双经典的aj9黑红吧。</p><br>
-            <img src="aj9\aj9wenzi2.jpg"  alt=" "><br><br><br>
+                    尽管时间飞逝已过30年，但相信只要是乔丹的球迷或是痴迷于Aj系列的鞋迷们，提起这场比赛，都不禁想起绝杀后高高跳起，在空中激动挥拳嘶吼庆祝的身影及他脚上那双经典的aj4黑红吧。</p><br>
+            <img src="aj4\aj4wenzi2.jpg"  alt=" "><br><br><br>
         </div>
 
 
         <h3>Air Jordan 4 经典照片赏析</h3>
         <div class="picture">
-            <img src="aj9\aj9.1.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.2.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.3.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.4.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.5.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.9.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.7.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.8.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.6.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.1.jpeg"  alt=" " class="b">
-            <img src="aj9\aj9.11.jpg"  alt=" " class="b">
-            <img src="aj9\aj9.12.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.1.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.2.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.3.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.4.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.5.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.9.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.7.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.8.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.6.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.1.jpeg"  alt=" " class="b">
+            <img src="aj4\aj4.11.jpg"  alt=" " class="b">
+            <img src="aj4\aj4.12.jpg"  alt=" " class="b">
         </div> 
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
