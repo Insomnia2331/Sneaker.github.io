@@ -96,9 +96,43 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 6</h1>
             <p>1991年1月 Nike Air Jordan 6首次被大众看见。据说AJ6的灵感来自跑车的后扰流板和一个面具鞋舌，AJ6延续了AJ5的塑料鞋面固定扣的设计，而且在AJ6的固定扣更加的简洁迷你。要知道这一设计在当时非常流行，几乎是那一时期大多数人眼中衡量运动鞋好坏的“标尺”。
@@ -145,6 +179,19 @@
             <img src="aj6\aj6.10.jpg"  alt=" " class="b">
             <img src="aj6\aj6.11.jpg"  alt=" " class="b">
             <img src="aj6\aj6.12.jpg"  alt=" " class="b">
-        </div> 
+        </div>
+     <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
