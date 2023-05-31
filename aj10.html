@@ -107,9 +107,42 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgb(2, 18, 20);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(2, 18, 20);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+         <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 10</h1>
             <p>1993年8月3日，一位建筑工人发现了一具高度腐烂的尸体，警方经过调查证实那就是詹姆斯·乔丹（迈克尔·乔丹父亲）的尸体。
@@ -145,6 +178,19 @@
             <img src="aj10\aj10.10.jpg"  alt=" " class="b">
             <img src="aj10\aj10.11.jpg"  alt=" " class="b">
             <img src="aj10\aj10.12.jpg"  alt=" " class="b">
-        </div> 
+        </div>
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
