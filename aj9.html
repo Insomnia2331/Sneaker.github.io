@@ -107,9 +107,43 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgb(145, 227, 238);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background:rgb(145, 227, 238);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 9</h1>
             <p>当Michael Jordan再次回到聚光灯下时，他穿上的却是捧球衫。1993年的夏天对于他来说以乎过得有些辛辣，率领风头正劲的芝加哥公牛队豪取三连冠，建立了一个王朝惊艳了整个世界。而在这之后，父亲惨通不测将他的心绪瞬间从顶峰坠入深渊，
@@ -199,5 +233,17 @@
             <img src="aj9\aj9.11.jpg"  alt=" " class="b">
             <img src="aj9\aj9.12.jpg"  alt=" " class="b">
         </div> 
+                
+     <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+        </script>
     </body>    
     </html>
