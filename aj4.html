@@ -90,9 +90,42 @@
             font-family: "frozen";
             src: url("Ice kingdom - Bold - Por Kustren.woff");
             }
+            
+            .back {
+                position: absolute;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .homepage:hover, .back:hover{
+                transform: scale(1.1);
+                transition: all 0.5s;
+
+            }
+
+            .homepage{
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: rgb(59, 2, 2);
+                color:aliceblue;
+                height:40px;
+                width: 120px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
+        <div class="buttons">
+            <button class="back">&lt Back</button>
+            <button class="homepage">Back to home page</button>
+        </div>
+        
         <div class="container">
             <h1>Air Jordan 4</h1>
             <p>Air Jordan 4 背后的故事没有并前三代那样惊心动魄。在NIKE成功留住乔丹后，设计师Tinker Hatfield继续接任了Air Jordan系列的首席设计师。他首次提出了尼龙和皮质相结合的理念在设计上多少有一些乔丹3代的影子。
@@ -134,5 +167,18 @@
             <img src="aj4\aj4.11.jpg"  alt=" " class="b">
             <img src="aj4\aj4.12.jpg"  alt=" " class="b">
         </div> 
+        <script>
+        const back = document.querySelector(".back")
+        const homepage = document.querySelector(".homepage")
+        back.addEventListener("click", function(){
+            window.location.href = 'Jordanstory.html'
+        })
+
+        homepage.addEventListener("click", function(){
+            window.location.href = 'Sneakers_Story.html'
+        })
+
+
+    </script>
     </body>    
     </html>
